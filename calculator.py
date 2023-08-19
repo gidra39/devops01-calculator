@@ -1,16 +1,16 @@
 def calculator(operation, input1, input2):
 
-    if operation == 'subtraction':
+    if operation == '1':
+        x = input1 + input2
+        print(x) 
+    elif operation == '2':
         x = input1 - input2
         print(x) 
-    elif operation == 'multiplication':
+    elif operation == '3':
         x = input1 * input2
-        print(x) 
-    elif operation == 'dividing':
-        x = input1 // input2
         print(x)    
-    elif operation == 'addition':
-        x = input1 + input2    
+    elif operation == '4':
+        x = input1 // input2    
         print(x)    
     else:
         print("Invalid operator. Please enter a valid operation")
@@ -24,6 +24,6 @@ try:
 except ValueError:
     print("Invalid input. Please enter a valid number.")
     exit()
-operation_user = input("Enter an operation: addition, subtraction, multiplication or dividing: ")
+operation_user = input("Enter an operation (1 - addition, 2 - subtraction, 3 - multiplication or 4 - dividing): ")
 calculator(operation_user, int_input1_user, int_input2_user)
 
